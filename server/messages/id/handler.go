@@ -28,7 +28,7 @@ func NewHandler(localCache *cache.Cache) http.Handler {
 	return &handler{
 		localCache: localCache,
 		logger: log.With().Fields(map[string]interface{}{
-			"handler": "messages/get",
+			"handler": "messages/id",
 		}).Logger(),
 	}
 }
